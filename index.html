@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      // let app = document.getElementById('app');
+
+      // let header = document.createElement('h1');
+      // let headerContent = document.createTextNode('Welcome to JavaScriptForAll');
+
+      // header.appendChild(headerContent);
+
+      // app.appendChild(header);
+    </script>
+
+    <script type="text/jsx">
+      const app = document.getElementById("app")
+
+        const Header = (props) => {
+            return (<h1 title={props.title}>Develop, Preview, Ship</h1>)
+        }
+
+        const Home = () => {
+            return (<div>
+                <Header title="Love"/>
+            </div>)
+        }        
+
+       ReactDOM.render(<Home/>, app)
+    </script>
+  </body>
+</html>
